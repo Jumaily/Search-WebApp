@@ -1,0 +1,1 @@
+function autocomplet(e){var r=0,a=$("#search_keyword_id").val();a.length>=r?$.ajax({url:"ajax_refresh.php?srch="+e,type:"POST",data:{keyword:a},success:function(e){$("#search_keyword").show(),$("#search_keyword").html(e)}}):$("#search_keyword").hide()}function set_item(e){$("#search_keyword_id").val(e),$("#search_keyword").hide()}
